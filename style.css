@@ -19,7 +19,6 @@ nav{
 a{
     color: black;
     text-decoration: none;
-    
 }
 
 a:hover{
@@ -29,6 +28,7 @@ a:hover{
 
 nav img{
     width: 35px;
+    border-radius: 10px;
 }
 
 main{
@@ -80,10 +80,12 @@ input{
 
 .icons-top >img {
     width: 40px;
+    border-radius: 10px;
 }
 
 .icons-btm >img {
     width: 40px;
+    border-radius: 10px;
 }
 
 footer{
@@ -111,4 +113,74 @@ footer{
 
 .right a{
     padding: 1em;
+}
+
+@media screen and (max-width:768px) {
+    
+    nav{
+        visibility: none;
+        width:50vw;
+    }
+    
+    a{
+        color: black;
+        text-decoration: none;
+        margin-right: 1.2em;
+    }
+        
+    nav img{
+        display: none;
+    }
+
+    main{
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        text-align:center;
+        margin-top: 2em;
+    }
+
+    main img {
+        width: 75%;
+        margin-bottom: 1.5em;
+    }
+    
+    input{
+        width: 75%;
+        padding: 1.2em;
+        border-radius: 30px;
+        border-style: none;
+        border: 1px solid grey;
+    }
+    
+    .btns-cont{
+        margin-top: 3em;
+        margin-bottom: 2.2em;
+        padding:2em;
+        border: none;
+        width: 75vw;
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+    }
+    
+    .btns-cont button{
+        padding: 0.9em;
+        margin: 0.6em;
+        border: 1px solid grey;
+        border-radius: 15px;
+        width: 52%;
+        
+    }
+    
+    .icons {
+        display: none;
+        visibility: none;
+    }
+    
+    footer{
+        display: none;
+        visibility: none;
+    }
+    
 }
